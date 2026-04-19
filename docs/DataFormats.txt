@@ -1,0 +1,31 @@
+DATA FORMATS
+============
+
+Matchlist format
+----------------
+
+    Field description of match
+
+    0   GD
+    1   Full mame
+    2   First name
+    3   Middle name
+    4   Last name
+    5   Email
+    6   Earliest Known Ancestor (MDKA)
+    7   Haplogroup
+    8   Match date
+
+    ml = ((kit_id,'GD'),(1,'Full Name'),(2,'First Name'),(3,'Middle Name'),(4,'Last Name'),(5,'Email'),
+          (6,'Earliest Known Ancestor'),(7,'mtDNA Haplogroup'),(8,'Match Date'))
+
+    A match data is a tuple now since 9 Feb 2021. Before it was a list.
+
+
+Cluster match
+-------------
+
+    cm = ( (kit_id, GD), (match) )   =>
+
+    cm = ( (kit_id, GD), (Full name, First name, Middle name, Last name, Email, MDKA, Haplogroup, Match date) )
+

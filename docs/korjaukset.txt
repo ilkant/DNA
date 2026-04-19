@@ -1,0 +1,14 @@
+12.4.2026 klo 17.30
+Onko tuossa luokkakaavion luokissa jotain paranneltavaa?
+
+Kyllä, löytyy useita selkeitä parannuskohteita:
+
+Rakenteelliset ongelmat
+
+link.py ja links.py sisältävät molemmat lähes identtisen Link-luokan — toinen näistä tulisi poistaa. links.py:n versio on suppeampi eikä toteuta show()-metodia kunnolla.
+
+netcluster.py ja netclusters.py sisältävät päällekkäistä koodia: mm. delete_duplicates(), split_clusters(), copy_extra_matches() ja is_same_cluster() esiintyvät molemmissa. Nämä näyttävät olevan kopiota vanhasta cnetwork.py-tiedostosta, jota ei ole siivottu refaktoroinnin jälkeen.
+
+Luokkien vastuunjako
+
+NetClusters tekee liian montaa asiaa — se sisältää tiedosto-operaatiot (write, load_from_json), verkon rakennuslogiikan, GUI-dialogin (show_mdkas luo QDia…

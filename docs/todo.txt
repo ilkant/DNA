@@ -1,0 +1,25 @@
+***** Jatkoidea 1:
+Ohjelma, joka etsii haploryhmän aliklustereiden upstreamin JSON-muotoisesta verkosta. Siinä voi olla mukana mutaatiot, joiden perusteella upstreamia voi päätellä.
+
+***** Jatkoidea 2:
+Ohjelma voisi tehdä welaimella katsottavan puumaisen verkon. Selaimella voisi navigoida halutusta kuvakulmasta verkkoa ja zoomailla.
+Verkko toimisi netissä kuten haplotree.info.
+
+***** Jatkoidea 3:
+Ohjelma tallentaisi luetut kitit JSON-muotoiseksi verkoksi, jossa on kaikki tarpeelliset tiedot. Sitten tarvitsisi lukea vain yhden
+uuden kitin tiedot (match-listan) ja lisätä verkoston JSON-tiedostoon.
+
+***** Jatkoidea 4:
+For each kitti in kits.csv:
+    1. Kirjaudu FTDNA:han tunnuksella/salasanalla
+    2. Lataa MT-DNA match-lista CSV:nä
+    3. Tallenna tiedosto oikeaan kansioon
+    4. Kirjaudu ulos
+    5. Seuraava kitti...
+
+***** Jatkoidea 5:
+Ohjelma, joka tekisi kuvitellun kitin mätsilistat verkoston JSON-tiedostosta.
+
+***** Jatkoidea 6:
+Testatun nimet ovat confidental-tietoa. Pitäisi olla valitsin, joka joko näyttää Nimi-kentänkin tooltipsissä kun vie
+hiiren pienen pallon päälle. Tai sitten public-versio, että nimeä ei näytetä, mutta näytetään MEKA.
