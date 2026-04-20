@@ -1,16 +1,1 @@
-Luokkien vastuunjako
 
-NetClusters tekee liian montaa asiaa — se sisältää tiedosto-operaatiot (write, load_from_json), verkon rakennuslogiikan, GUI-dialogin (show_mdkas luo QDialog-ikkunan suoraan), ja verkostoanalyysin. GUI-koodi kuuluu gui.py:hyn, ei datamalliin.
-
-Kit.py
-On erilliset gd0, gd1, gd2, gd3 -listat jotka tekevät saman asian kuin Gds. Pitäisi valita toinen tapa.
-
-Match-hierarkia
-
-Clumatch-luokka (match.py:ssä) kutsuu super()._init():tä väärillä argumenteilla — se antaa kit_p, gd_p, name_p, email_p, mdka_p mutta Match.init_ odottaa Name-oliota ensimmäiseksi. Tämä kaatuu ajon aikana.
-
-Match._getitem_() on rikki — se kutsuu return self[i] joka aiheuttaa äärettömän rekursion.
-
-Puuttuvat luokat
-
-main.py viittaa cnetwork.Nclusters-luokkaan jota ei löydy projektin tiedostoista — se on todennäköisesti vanha nimi NetClusters-luokalle mutta importti on korjaamatta.
