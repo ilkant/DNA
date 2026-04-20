@@ -3,12 +3,17 @@
 This program is not a ready project. It's on the way to finish. It is programmed with pyCharm. Now it can draw
 picture of clustered haplogoup with MDKAs.
 
-Cluster network program. It makes nodes.csv and links.csv to Gephi. Gephi can display a network of mt-dna matches
-in one haplogroup. The match clusters can be subgroups to that haplogroup. Grouping depends on GD values between
-matches. 
+Cluster network program. It makes a network of haplogroup clusters based GDs of tested person matches. It don't use
+Gephi anymore. It uses networkx of python.
 
 This is the main purpose to this program. You can do other things with this program too. Be free to modify code.
 If you think you know better methods to do something, feel free to contact and tell to Ilpo at ilpo@iki.fi.
 
 Input to this program are downloaded mt-dna match lists from FTDNA. Output are nodes.csv and links.csv. With Gephi
 you can do beautiful graphs of GD network. You can also print MDKA:s as txt and xml file and a spreadsheet.
+
+TODO:
+- Reading kit match lists to list
+- process net clusters
+- Adding a signle matchilst to network
+- Analyzing network dispersion, upstream, etc.
