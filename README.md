@@ -1,6 +1,7 @@
 # Klusterointi
 
-This program is not a ready project. It's on the way to finish. It is programmed with pyCharm.
+This program is not a ready project. It's on the way to finish. It is programmed with pyCharm. Now it can draw
+picture of clustered haplogoup with MDKAs.
 
 Cluster network program. It makes nodes.csv and links.csv to Gephi. Gephi can display a network of mt-dna matches
 in one haplogroup. The match clusters can be subgroups to that haplogroup. Grouping depends on GD values between
