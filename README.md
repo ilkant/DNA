@@ -1,4 +1,4 @@
-# mt_network
+# Klusterointi
 
 This program is not a ready project. It's on the way to finish. It is programmed with pyCharm.
 
